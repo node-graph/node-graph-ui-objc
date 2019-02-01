@@ -1,0 +1,3 @@
+[submodule "submodules/nodle-objc"]
+	path = submodules/nodle-objc
+	url = git@github.com:msundstrom/nodle.git
