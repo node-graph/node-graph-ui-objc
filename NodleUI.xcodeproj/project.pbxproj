@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F0149522204BE650062DAF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149512204BE650062DAF0 /* AppDelegate.m */; };
+		5F0149552204BE650062DAF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149542204BE650062DAF0 /* ViewController.m */; };
+		5F0149582204BE650062DAF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0149562204BE650062DAF0 /* Main.storyboard */; };
+		5F01495A2204BE660062DAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0149592204BE660062DAF0 /* Assets.xcassets */; };
+		5F01495D2204BE660062DAF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F01495B2204BE660062DAF0 /* LaunchScreen.storyboard */; };
+		5F0149602204BE660062DAF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01495F2204BE660062DAF0 /* main.m */; };
+		5F0149702204BECB0062DAF0 /* nodle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F01496D2204BEA60062DAF0 /* nodle.framework */; };
+		5F0149712204BECB0062DAF0 /* nodle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F01496D2204BEA60062DAF0 /* nodle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5F01497B2204C5560062DAF0 /* NodeRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01497A2204C5560062DAF0 /* NodeRegistry.m */; };
+		5F0149B1222520A90062DAF0 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149B0222520A90062DAF0 /* DraggableView.m */; };
+		5F0149B8223033B40062DAF0 /* NodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149B7223033B40062DAF0 /* NodeView.m */; };
+		5F0149BC223186190062DAF0 /* ConnectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149BA2231851E0062DAF0 /* ConnectionView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F01496C2204BEA60062DAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0149672204BEA50062DAF0 /* nodle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 405038E821FC814A005B1585;
+			remoteInfo = nodle;
+		};
+		5F01496E2204BEA60062DAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0149672204BEA50062DAF0 /* nodle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 405038F121FC814A005B1585;
+			remoteInfo = nodleTests;
+		};
+		5F0149722204BECB0062DAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0149672204BEA50062DAF0 /* nodle.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 405038E721FC814A005B1585;
+			remoteInfo = nodle;
+		};
+		5F0149B4222520AA0062DAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0149672204BEA50062DAF0 /* nodle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C08F612210C34500FD01AE;
+			remoteInfo = "nodle-macos";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F0149742204BECB0062DAF0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5F0149712204BECB0062DAF0 /* nodle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F01494D2204BE650062DAF0 /* NodleUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NodleUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F0149502204BE650062DAF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F0149512204BE650062DAF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F0149532204BE650062DAF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5F0149542204BE650062DAF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5F0149572204BE650062DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F0149592204BE660062DAF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F01495C2204BE660062DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F01495E2204BE660062DAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F01495F2204BE660062DAF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F0149672204BEA50062DAF0 /* nodle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = nodle.xcodeproj; path = "submodules/nodle-objc/nodle.xcodeproj"; sourceTree = "<group>"; };
+		5F0149792204C5560062DAF0 /* NodeRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeRegistry.h; sourceTree = "<group>"; };
+		5F01497A2204C5560062DAF0 /* NodeRegistry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeRegistry.m; sourceTree = "<group>"; };
+		5F0149AF222520A90062DAF0 /* DraggableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
+		5F0149B0222520A90062DAF0 /* DraggableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
+		5F0149B6223033B40062DAF0 /* NodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeView.h; sourceTree = "<group>"; };
+		5F0149B7223033B40062DAF0 /* NodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeView.m; sourceTree = "<group>"; };
+		5F0149B92231851E0062DAF0 /* ConnectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionView.h; sourceTree = "<group>"; };
+		5F0149BA2231851E0062DAF0 /* ConnectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F01494A2204BE650062DAF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0149702204BECB0062DAF0 /* nodle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F0149442204BE650062DAF0 = {
+			isa = PBXGroup;
+			children = (
+				5F01494F2204BE650062DAF0 /* NodleUI */,
+				5F01494E2204BE650062DAF0 /* Products */,
+				5F0149662204BE980062DAF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F01494E2204BE650062DAF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F01494D2204BE650062DAF0 /* NodleUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F01494F2204BE650062DAF0 /* NodleUI */ = {
+			isa = PBXGroup;
+			children = (
+				5F0149752204BF990062DAF0 /* NodleViews */,
+				5F0149502204BE650062DAF0 /* AppDelegate.h */,
+				5F0149512204BE650062DAF0 /* AppDelegate.m */,
+				5F0149532204BE650062DAF0 /* ViewController.h */,
+				5F0149542204BE650062DAF0 /* ViewController.m */,
+				5F0149562204BE650062DAF0 /* Main.storyboard */,
+				5F0149592204BE660062DAF0 /* Assets.xcassets */,
+				5F01495B2204BE660062DAF0 /* LaunchScreen.storyboard */,
+				5F01495E2204BE660062DAF0 /* Info.plist */,
+				5F01495F2204BE660062DAF0 /* main.m */,
+			);
+			path = NodleUI;
+			sourceTree = "<group>";
+		};
+		5F0149662204BE980062DAF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F0149672204BEA50062DAF0 /* nodle.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F0149682204BEA50062DAF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F01496D2204BEA60062DAF0 /* nodle.framework */,
+				5F01496F2204BEA60062DAF0 /* nodleTests.xctest */,
+				5F0149B5222520AA0062DAF0 /* nodle.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F0149752204BF990062DAF0 /* NodleViews */ = {
+			isa = PBXGroup;
+			children = (
+				5F0149792204C5560062DAF0 /* NodeRegistry.h */,
+				5F01497A2204C5560062DAF0 /* NodeRegistry.m */,
+				5F0149AF222520A90062DAF0 /* DraggableView.h */,
+				5F0149B0222520A90062DAF0 /* DraggableView.m */,
+				5F0149B6223033B40062DAF0 /* NodeView.h */,
+				5F0149B7223033B40062DAF0 /* NodeView.m */,
+				5F0149B92231851E0062DAF0 /* ConnectionView.h */,
+				5F0149BA2231851E0062DAF0 /* ConnectionView.m */,
+			);
+			path = NodleViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F01494C2204BE650062DAF0 /* NodleUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F0149632204BE660062DAF0 /* Build configuration list for PBXNativeTarget "NodleUI" */;
+			buildPhases = (
+				5F0149492204BE650062DAF0 /* Sources */,
+				5F01494A2204BE650062DAF0 /* Frameworks */,
+				5F01494B2204BE650062DAF0 /* Resources */,
+				5F0149742204BECB0062DAF0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F0149732204BECB0062DAF0 /* PBXTargetDependency */,
+			);
+			name = NodleUI;
+			productName = NodleUI;
+			productReference = 5F01494D2204BE650062DAF0 /* NodleUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F0149452204BE650062DAF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Nodle;
+				TargetAttributes = {
+					5F01494C2204BE650062DAF0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 5F0149482204BE650062DAF0 /* Build configuration list for PBXProject "NodleUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F0149442204BE650062DAF0;
+			productRefGroup = 5F01494E2204BE650062DAF0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5F0149682204BEA50062DAF0 /* Products */;
+					ProjectRef = 5F0149672204BEA50062DAF0 /* nodle.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5F01494C2204BE650062DAF0 /* NodleUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5F01496D2204BEA60062DAF0 /* nodle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = nodle.framework;
+			remoteRef = 5F01496C2204BEA60062DAF0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F01496F2204BEA60062DAF0 /* nodleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = nodleTests.xctest;
+			remoteRef = 5F01496E2204BEA60062DAF0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F0149B5222520AA0062DAF0 /* nodle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = nodle.framework;
+			remoteRef = 5F0149B4222520AA0062DAF0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F01494B2204BE650062DAF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F01495D2204BE660062DAF0 /* LaunchScreen.storyboard in Resources */,
+				5F01495A2204BE660062DAF0 /* Assets.xcassets in Resources */,
+				5F0149582204BE650062DAF0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F0149492204BE650062DAF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0149552204BE650062DAF0 /* ViewController.m in Sources */,
+				5F0149B1222520A90062DAF0 /* DraggableView.m in Sources */,
+				5F0149B8223033B40062DAF0 /* NodeView.m in Sources */,
+				5F0149602204BE660062DAF0 /* main.m in Sources */,
+				5F0149522204BE650062DAF0 /* AppDelegate.m in Sources */,
+				5F0149BC223186190062DAF0 /* ConnectionView.m in Sources */,
+				5F01497B2204C5560062DAF0 /* NodeRegistry.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F0149732204BECB0062DAF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nodle;
+			targetProxy = 5F0149722204BECB0062DAF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F0149562204BE650062DAF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F0149572204BE650062DAF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F01495B2204BE660062DAF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F01495C2204BE660062DAF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F0149612204BE660062DAF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5F0149622204BE660062DAF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F0149642204BE660062DAF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WFU5WSAQXA;
+				INFOPLIST_FILE = NodleUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodle.NodleUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F0149652204BE660062DAF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WFU5WSAQXA;
+				INFOPLIST_FILE = NodleUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nodle.NodleUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F0149482204BE650062DAF0 /* Build configuration list for PBXProject "NodleUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0149612204BE660062DAF0 /* Debug */,
+				5F0149622204BE660062DAF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F0149632204BE660062DAF0 /* Build configuration list for PBXNativeTarget "NodleUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F0149642204BE660062DAF0 /* Debug */,
+				5F0149652204BE660062DAF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F0149452204BE650062DAF0 /* Project object */;
+}
