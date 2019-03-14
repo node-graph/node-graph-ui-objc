@@ -1,4 +1,6 @@
 #import "NodeView.h"
+#import "NodeInputView.h"
+#import "NodeOutputView.h"
 
 @interface NodeView ()
 
@@ -31,15 +33,21 @@
     self.inputsStackView = [UIStackView new];
     self.inputsStackView.translatesAutoresizingMaskIntoConstraints = NO;
     self.inputsStackView.axis = UILayoutConstraintAxisVertical;
-//    self.inputsStackView.directionalLayoutMargins
     [self addSubview:self.inputsStackView];
+
+    self.outputsStackView = [UIStackView new];
+    self.outputsStackView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.outputsStackView.axis = UILayoutConstraintAxisVertical;
+    [self addSubview:self.outputsStackView];
     
     for (NodeInput *input in self.node.inputs) {
-        UILabel *inputLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 20)];
-        inputLabel.text = input.key ?: @"no_key";
-        inputLabel.textColor = UIColor.whiteColor;
-        inputLabel.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:0.0 alpha:0.2];
-        [self.inputsStackView addArrangedSubview:inputLabel];
+        NodeInputView *inputView = [[NodeInputView alloc] initWithNodeInput:input];
+        [self.inputsStackView addArrangedSubview:inputView];
+    }
+
+    for (NodeOutput *output in self.node.outputs) {
+        NodeOutputView *outputView = [[NodeOutputView alloc] initWithNodeOutput:output];
+        [self.outputsStackView addArrangedSubview:outputView];
     }
 }
 
@@ -51,8 +59,13 @@
     
     // Inputs
     [[self.inputsStackView.topAnchor constraintEqualToAnchor:self.titleLabel.bottomAnchor constant:Spacer] setActive:YES];
-    [[self.inputsStackView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:Spacer] setActive:YES];
+    [[self.inputsStackView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor] setActive:YES];
     [[self.inputsStackView.widthAnchor constraintEqualToAnchor:self.widthAnchor multiplier:0.5] setActive:YES];
+
+    // Outputs
+    [[self.outputsStackView.topAnchor constraintEqualToAnchor:self.titleLabel.bottomAnchor constant:Spacer] setActive:YES];
+    [[self.outputsStackView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor] setActive:YES];
+    [[self.outputsStackView.widthAnchor constraintEqualToAnchor:self.widthAnchor multiplier:0.5] setActive:YES];
 }
 
 - (void)updateData {
