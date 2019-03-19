@@ -1,11 +1,11 @@
 #import "ViewController.h"
 #import "NodeView.h"
-#import "ConnectionView.h"
+#import "ConnectionLineView.h"
 
 @interface ViewController () <DraggableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray<NodeView *> *nodeViews;
-@property (nonatomic, strong) NSMutableArray<ConnectionView *> *connectionViews;
+@property (nonatomic, strong) NSMutableArray<ConnectionLineView *> *connectionViews;
 
 @end
 
@@ -42,7 +42,7 @@
 }
 
 - (void)addConnectionViewFromLeadingNodeView:(NodeView *)leadingNodeView toTrailingNodeView:(NodeView *)trailingNodeView {
-    ConnectionView *connectionView = [[ConnectionView alloc] initWithLeadingView:leadingNodeView
+    ConnectionLineView *connectionView = [[ConnectionLineView alloc] initWithLeadingView:leadingNodeView
                                                                     trailingView:trailingNodeView];
     connectionView.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.2];
     connectionView.spacer = Spacer * 3;
@@ -56,7 +56,7 @@
     [self.view addSubview:draggableView]; // Put at top of stack
     
     for (NSUInteger i = 0; i < self.connectionViews.count; i++) {
-        ConnectionView *connectionView = self.connectionViews[i];
+        ConnectionLineView *connectionView = self.connectionViews[i];
         connectionView.lineType = (ConnectionViewLineType)((connectionView.lineType + 1) % 4);
     }
 }

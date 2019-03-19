@@ -1,4 +1,4 @@
-#import "ConnectionView.h"
+#import "ConnectionLineView.h"
 
 @interface NSLayoutConstraint (Helpers)
 - (instancetype)withPriority:(UILayoutPriority)priority;
@@ -11,7 +11,7 @@
 }
 @end
 
-@interface ConnectionView ()
+@interface ConnectionLineView ()
 
 @property (nonatomic, strong) UIView *leadingConnectionPointView;
 @property (nonatomic, strong) UIView *trailingConnectionPointView;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation ConnectionView
+@implementation ConnectionLineView
 
 #pragma mark - Lifecycle
 
