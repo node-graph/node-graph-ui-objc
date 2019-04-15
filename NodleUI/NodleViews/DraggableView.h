@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DraggableView : UIView
 
 @property (nonatomic, assign) id<DraggableViewDelegate> delegate;
+@property (nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
+@property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
 @property (nonatomic, assign, readonly, getter=isPickedUp) BOOL pickedUp;
 
 @end
