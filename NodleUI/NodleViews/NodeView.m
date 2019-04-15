@@ -1,8 +1,6 @@
 #import "NodeView.h"
-#import "NodeInputView.h"
-#import "NodeOutputView.h"
 
-@interface NodeView ()
+@interface NodeView () <NodeConnectionViewDelegate>
 
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UIStackView *inputsStackView;
@@ -11,6 +9,7 @@
 @end
 
 @implementation NodeView
+@dynamic delegate;
 
 - (instancetype)initWithNode:(id<Node>)node {
     self = [super init];
@@ -42,11 +41,15 @@
     
     for (NodeInput *input in self.node.inputs) {
         NodeInputView *inputView = [[NodeInputView alloc] initWithNodeInput:input];
+        inputView.delegate = self;
+        [self.panGestureRecognizer requireGestureRecognizerToFail:inputView.panGestureRecognizer];
         [self.inputsStackView addArrangedSubview:inputView];
     }
 
     for (NodeOutput *output in self.node.outputs) {
         NodeOutputView *outputView = [[NodeOutputView alloc] initWithNodeOutput:output];
+        outputView.delegate = self;
+        [self.panGestureRecognizer requireGestureRecognizerToFail:outputView.panGestureRecognizer];
         [self.outputsStackView addArrangedSubview:outputView];
     }
 }
@@ -75,6 +78,37 @@
 - (void)updateTheme {
     self.backgroundColor = [UIColor colorWithWhite:0.35 alpha:1.0];
     self.titleLabel.textColor = UIColor.whiteColor;
+}
+
+#pragma mark - Setters & Getters
+
+- (NSArray<NodeInputView *> *)inputViews {
+    return [self.inputsStackView subviews];
+}
+
+- (NSArray<NodeOutputView *> *)outputViews {
+    return [self.outputsStackView subviews];
+}
+
+#pragma mark - NodeConnectionViewDelegate
+
+- (void)nodeConnectionViewTapped:(NodeConnectionView *)nodeConnectionView {
+    [self.delegate nodeConnectionViewTapped:nodeConnectionView];
+}
+
+- (void)nodeConnectionView:(NodeConnectionView *)nodeConnectionView didStartPanAtOffset:(CGPoint)offset {
+    CGPoint realPosition = [nodeConnectionView.gestureView convertPoint:offset toView:self.superview];
+    [self.delegate nodeConnectionView:nodeConnectionView didStartPanAtOffset:realPosition];
+}
+
+- (void)nodeConnectionView:(NodeConnectionView *)nodeConnectionView didPanToOffset:(CGPoint)offset withTranslation:(CGPoint)translation {
+    CGPoint realPosition = [nodeConnectionView.gestureView convertPoint:offset toView:self.superview];
+    [self.delegate nodeConnectionView:nodeConnectionView didPanToOffset:realPosition withTranslation:translation];
+}
+
+- (void)nodeConnectionView:(NodeConnectionView *)nodeConnectionView didStopPanAtOffset:(CGPoint)offset withTranslation:(CGPoint)translation {
+    CGPoint realPosition = [nodeConnectionView.gestureView convertPoint:offset toView:self.superview];
+    [self.delegate nodeConnectionView:nodeConnectionView didStopPanAtOffset:realPosition withTranslation:translation];
 }
 
 @end
