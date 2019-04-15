@@ -31,6 +31,8 @@
     self.titleLabel.text = self.nodeInput.key ?: @"";
     self.titleLabel.textColor = UIColor.whiteColor;
     [self addSubview:self.titleLabel];
+    
+    [self setGestureView:self.connectionPointView];
 }
 
 - (void)setupLayout {

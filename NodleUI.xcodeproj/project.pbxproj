@@ -21,6 +21,7 @@
 		5F0149BC223186190062DAF0 /* ConnectionLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149BA2231851E0062DAF0 /* ConnectionLineView.m */; };
 		5F0149BF22379DE10062DAF0 /* NodeInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149BE22379DE10062DAF0 /* NodeInputView.m */; };
 		5F0149C2223970CD0062DAF0 /* NodeOutputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149C1223970CD0062DAF0 /* NodeOutputView.m */; };
+		5F0149C82240CE980062DAF0 /* NodeConnectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149C72240CE980062DAF0 /* NodeConnectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		5F0149BE22379DE10062DAF0 /* NodeInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeInputView.m; sourceTree = "<group>"; };
 		5F0149C0223970CD0062DAF0 /* NodeOutputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeOutputView.h; sourceTree = "<group>"; };
 		5F0149C1223970CD0062DAF0 /* NodeOutputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeOutputView.m; sourceTree = "<group>"; };
+		5F0149C62240CE980062DAF0 /* NodeConnectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeConnectionView.h; sourceTree = "<group>"; };
+		5F0149C72240CE980062DAF0 /* NodeConnectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeConnectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				5F0149B7223033B40062DAF0 /* NodeView.m */,
 				5F0149B92231851E0062DAF0 /* ConnectionLineView.h */,
 				5F0149BA2231851E0062DAF0 /* ConnectionLineView.m */,
+				5F0149C62240CE980062DAF0 /* NodeConnectionView.h */,
+				5F0149C72240CE980062DAF0 /* NodeConnectionView.m */,
 				5F0149BD22379DE10062DAF0 /* NodeInputView.h */,
 				5F0149BE22379DE10062DAF0 /* NodeInputView.m */,
 				5F0149C0223970CD0062DAF0 /* NodeOutputView.h */,
@@ -285,6 +290,7 @@
 				5F0149BF22379DE10062DAF0 /* NodeInputView.m in Sources */,
 				5F0149602204BE660062DAF0 /* main.m in Sources */,
 				5F0149C2223970CD0062DAF0 /* NodeOutputView.m in Sources */,
+				5F0149C82240CE980062DAF0 /* NodeConnectionView.m in Sources */,
 				5F0149522204BE650062DAF0 /* AppDelegate.m in Sources */,
 				5F0149BC223186190062DAF0 /* ConnectionLineView.m in Sources */,
 				5F01497B2204C5560062DAF0 /* NodeRegistry.m in Sources */,

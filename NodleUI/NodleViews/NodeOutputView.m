@@ -32,6 +32,8 @@
     self.titleLabel.textColor = UIColor.whiteColor;
     self.titleLabel.textAlignment = NSTextAlignmentRight;
     [self addSubview:self.titleLabel];
+    
+    [self setGestureView:self.connectionPointView];
 }
 
 - (void)setupLayout {
