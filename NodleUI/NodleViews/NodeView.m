@@ -90,6 +90,24 @@
     return [self.outputsStackView subviews];
 }
 
+- (NodeInputView *)inputViewForNodeInput:(NodeInput *)nodeInput {
+    for (NodeInputView *inputView in self.inputViews) {
+        if (inputView.nodeInput == nodeInput) {
+            return inputView;
+        }
+    }
+    return nil;
+}
+
+- (NodeOutputView *)outputViewForNodeOutput:(NodeOutput *)nodeOutput {
+    for (NodeOutputView *outputView in self.outputViews) {
+        if (outputView.nodeOutput == nodeOutput) {
+            return outputView;
+        }
+    }
+    return nil;
+}
+
 #pragma mark - NodeConnectionViewDelegate
 
 - (void)nodeConnectionViewTapped:(NodeConnectionView *)nodeConnectionView {

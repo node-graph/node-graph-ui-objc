@@ -17,6 +17,8 @@ static const CGFloat Spacer = 8.0;
 @property (nonatomic, readonly) NSArray<NodeOutputView *> *outputViews;
 
 - (instancetype)initWithNode:(id<Node>)node;
+- (nullable NodeInputView *)inputViewForNodeInput:(NodeInput *)nodeInput;
+- (nullable NodeOutputView *)outputViewForNodeOutput:(NodeOutput *)nodeOutput;
 
 @end
 
