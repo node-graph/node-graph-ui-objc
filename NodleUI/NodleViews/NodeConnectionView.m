@@ -40,8 +40,6 @@
 - (void)panGestureRecognizerChanged:(UIPanGestureRecognizer *)panGestureRecognizer {
     CGPoint translation = [panGestureRecognizer translationInView:self.gestureView];
     CGPoint realPosition = [self addPoint1:self.panStartPosition andPoint2:translation];
-    NSLog(@"Offset: %@", NSStringFromCGPoint(realPosition));
-    NSLog(@"Translation: %@", NSStringFromCGPoint(translation));
 
     switch (panGestureRecognizer.state) {
         case UIGestureRecognizerStateBegan: {
