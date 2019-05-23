@@ -13,7 +13,6 @@ typedef NS_ENUM(NSUInteger, ConnectionViewLineType) {
 
 @property (nonatomic, weak, readonly) UIView *leadingView;
 @property (nonatomic, weak, readonly) UIView *trailingView;
-@property (nonatomic, assign) CGFloat spacer;
 @property (nonatomic, assign) ConnectionViewLineType lineType;
 
 - (instancetype)initWithLeadingView:(UIView *)leadingView trailingView:(UIView *)trailingView;

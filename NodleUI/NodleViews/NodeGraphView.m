@@ -106,7 +106,6 @@ static const CGFloat connectionSnapDistance = 30;
     ConnectionLineView *connectionLineView = \
     [[ConnectionLineView alloc] initWithLeadingView:leadingView trailingView:trailingView];
     connectionLineView.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.2];
-    connectionLineView.spacer = Spacer * 3;
     [self addSubview:connectionLineView];
     [self.connectionLineViews addObject:connectionLineView];
     return connectionLineView;
@@ -153,7 +152,7 @@ static const CGFloat connectionSnapDistance = 30;
     // Store pair
     DraggningConnectionModel *draggningConnection = \
     [[DraggningConnectionModel alloc] initWithNodeConnectionView:nodeConnectionView
-                                              connectionLineView:nil //connectionLineView
+                                              connectionLineView:connectionLineView
                                                       handleView:handleView];
     
     [self.draggingConnections setObject:draggningConnection forKey:nodeConnectionView];
@@ -174,7 +173,7 @@ static const CGFloat connectionSnapDistance = 30;
 
     NodeConnectionView *closestConnectionView = [self connectionViewCompatibleWithConnectionView:nodeConnectionView closestToPosition:offset maxDistance:connectionSnapDistance];
     if (closestConnectionView) {
-        [self createConnectionLineViewFromLeadingView:nodeConnectionView toTrailingView:closestConnectionView];
+        [self createConnectionLineViewFromLeadingView:nodeConnectionView.gestureView toTrailingView:closestConnectionView.gestureView];
     }
     
     // Remove connection line view (connectionLineViews && draggingConnections)
@@ -219,10 +218,13 @@ static const CGFloat connectionSnapDistance = 30;
     NodeConnectionView *closestConnectionView = nil;
     
     for (NodeView *nodeView in nodeViews) {
+        if ([nodeView.inputViews containsObject:fromConnectionView] || [nodeView.outputViews containsObject:fromConnectionView]) {
+            continue;
+        }
         NSArray<NodeConnectionView *> *connectionViews = isOutput ? nodeView.inputViews : nodeView.outputViews;
         for (NodeConnectionView *connectionView in connectionViews) {
             CGPoint connectionViewPosition = \
-            [connectionView.gestureView convertPoint:connectionView.gestureView.center toView:self];
+            [connectionView convertPoint:connectionView.gestureView.center toView:self];
             CGPoint distanceToConnectionView = CGPointMake(connectionViewPosition.x - position.x, connectionViewPosition.y - position.y);
             CGFloat distance = sqrt(pow(fabs(distanceToConnectionView.x), 2) + pow(fabs(distanceToConnectionView.y), 2));
             

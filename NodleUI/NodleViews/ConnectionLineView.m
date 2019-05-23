@@ -64,11 +64,11 @@ static const CGFloat ConnectionLineViewLayoutPriority = 100;
 }
 
 - (void)setupLayout {
-    [[[self.leadingAnchor constraintLessThanOrEqualToAnchor:self.leadingView.trailingAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
-    [[[self.leadingAnchor constraintEqualToAnchor:self.trailingView.leadingAnchor constant:-self.spacer] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
+    [[[self.leadingAnchor constraintLessThanOrEqualToAnchor:self.leadingView.centerXAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
+    [[[self.leadingAnchor constraintEqualToAnchor:self.trailingView.centerXAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
     
-    [[[self.trailingAnchor constraintGreaterThanOrEqualToAnchor:self.trailingView.leadingAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
-    [[[self.trailingAnchor constraintEqualToAnchor:self.leadingView.trailingAnchor constant:self.spacer] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
+    [[[self.trailingAnchor constraintGreaterThanOrEqualToAnchor:self.trailingView.centerXAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
+    [[[self.trailingAnchor constraintEqualToAnchor:self.leadingView.centerXAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
     
     [[[self.topAnchor constraintLessThanOrEqualToAnchor:self.leadingView.topAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
     [[[self.topAnchor constraintLessThanOrEqualToAnchor:self.trailingView.topAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
@@ -82,10 +82,10 @@ static const CGFloat ConnectionLineViewLayoutPriority = 100;
     
     
     [[[self.leadingConnectionPointView.centerYAnchor constraintEqualToAnchor:self.leadingView.centerYAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
-    [[[self.leadingConnectionPointView.leadingAnchor constraintEqualToAnchor:self.leadingView.trailingAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
+    [[[self.leadingConnectionPointView.centerXAnchor constraintEqualToAnchor:self.leadingView.centerXAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
 
     [[[self.trailingConnectionPointView.centerYAnchor constraintEqualToAnchor:self.trailingView.centerYAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
-    [[[self.trailingConnectionPointView.trailingAnchor constraintEqualToAnchor:self.trailingView.leadingAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
+    [[[self.trailingConnectionPointView.centerXAnchor constraintEqualToAnchor:self.trailingView.centerXAnchor] withPriority:ConnectionLineViewLayoutPriority] setActive:YES];
 }
 
 - (void)didMoveToWindow {
@@ -101,14 +101,6 @@ static const CGFloat ConnectionLineViewLayoutPriority = 100;
 }
 
 #pragma mark - Setters & Getters
-
-- (void)setSpacer:(CGFloat)spacer {
-    if (_spacer == spacer) {
-        return;
-    }
-    _spacer = spacer;
-    [self remount];
-}
 
 - (void)setLineType:(ConnectionViewLineType)lineType {
     if (_lineType == lineType) {
@@ -133,15 +125,6 @@ static const CGFloat ConnectionLineViewLayoutPriority = 100;
 }
 
 #pragma mark - Actions
-
-- (void)remount {
-    UIView *superView = self.superview;
-    if (!superView) {
-        return;
-    }
-    [self removeFromSuperview];
-    [superView addSubview:self];
-}
 
 - (UIBezierPath *)updatedConnectionLinePathStraightLine {
     CGPoint startPoint = self.leadingConnectionPointView.center;
