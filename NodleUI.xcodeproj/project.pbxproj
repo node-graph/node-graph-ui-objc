@@ -22,6 +22,7 @@
 		5F0149BF22379DE10062DAF0 /* NodeInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149BE22379DE10062DAF0 /* NodeInputView.m */; };
 		5F0149C2223970CD0062DAF0 /* NodeOutputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149C1223970CD0062DAF0 /* NodeOutputView.m */; };
 		5F0149C82240CE980062DAF0 /* NodeConnectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149C72240CE980062DAF0 /* NodeConnectionView.m */; };
+		5FFE8B8A2265B19C00377A6D /* NodeGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8B892265B19C00377A6D /* NodeGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		5F0149C1223970CD0062DAF0 /* NodeOutputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeOutputView.m; sourceTree = "<group>"; };
 		5F0149C62240CE980062DAF0 /* NodeConnectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeConnectionView.h; sourceTree = "<group>"; };
 		5F0149C72240CE980062DAF0 /* NodeConnectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeConnectionView.m; sourceTree = "<group>"; };
+		5FFE8B882265B19C00377A6D /* NodeGraphView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeGraphView.h; sourceTree = "<group>"; };
+		5FFE8B892265B19C00377A6D /* NodeGraphView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeGraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 				5F0149BE22379DE10062DAF0 /* NodeInputView.m */,
 				5F0149C0223970CD0062DAF0 /* NodeOutputView.h */,
 				5F0149C1223970CD0062DAF0 /* NodeOutputView.m */,
+				5FFE8B882265B19C00377A6D /* NodeGraphView.h */,
+				5FFE8B892265B19C00377A6D /* NodeGraphView.m */,
 			);
 			path = NodleViews;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				5F0149522204BE650062DAF0 /* AppDelegate.m in Sources */,
 				5F0149BC223186190062DAF0 /* ConnectionLineView.m in Sources */,
 				5F01497B2204C5560062DAF0 /* NodeRegistry.m in Sources */,
+				5FFE8B8A2265B19C00377A6D /* NodeGraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
