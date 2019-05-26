@@ -9,11 +9,10 @@ typedef NS_ENUM(NSUInteger, ConnectionViewLineType) {
     ConnectionViewLineTypeStraightLine
 };
 
-@interface ConnectionView : UIView
+@interface ConnectionLineView : UIView
 
 @property (nonatomic, weak, readonly) UIView *leadingView;
 @property (nonatomic, weak, readonly) UIView *trailingView;
-@property (nonatomic, assign) CGFloat spacer;
 @property (nonatomic, assign) ConnectionViewLineType lineType;
 
 - (instancetype)initWithLeadingView:(UIView *)leadingView trailingView:(UIView *)trailingView;

@@ -4,8 +4,6 @@
 @interface DraggableView ()
 
 @property (nonatomic, assign) CGPoint pickedUpPosition;
-@property (nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
-@property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
 
 @end
 
