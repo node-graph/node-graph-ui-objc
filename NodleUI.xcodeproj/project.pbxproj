@@ -78,7 +78,7 @@
 		5F01495C2204BE660062DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F01495E2204BE660062DAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F01495F2204BE660062DAF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5F0149672204BEA50062DAF0 /* NodeGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NodeGraph.xcodeproj; path = "submodules/nodle-objc/NodeGraph.xcodeproj"; sourceTree = "<group>"; };
+		5F0149672204BEA50062DAF0 /* NodeGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NodeGraph.xcodeproj; path = "submodules/node-graph-objc/NodeGraph.xcodeproj"; sourceTree = "<group>"; };
 		5F0149792204C5560062DAF0 /* NodeRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeRegistry.h; sourceTree = "<group>"; };
 		5F01497A2204C5560062DAF0 /* NodeRegistry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeRegistry.m; sourceTree = "<group>"; };
 		5F0149AF222520A90062DAF0 /* DraggableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
