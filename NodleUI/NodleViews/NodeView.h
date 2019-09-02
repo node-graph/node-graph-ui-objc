@@ -2,7 +2,7 @@
 #import "NodeInputView.h"
 #import "NodeOutputView.h"
 
-#import <nodle/nodle.h>
+#import <NodeGraph/NodeGraph.h>
 
 
 NS_ASSUME_NONNULL_BEGIN

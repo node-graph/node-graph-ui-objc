@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import <nodle/nodle.h>
+#import <NodeGraph/NodeGraph.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

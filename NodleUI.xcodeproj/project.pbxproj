@@ -13,8 +13,6 @@
 		5F01495A2204BE660062DAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0149592204BE660062DAF0 /* Assets.xcassets */; };
 		5F01495D2204BE660062DAF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F01495B2204BE660062DAF0 /* LaunchScreen.storyboard */; };
 		5F0149602204BE660062DAF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01495F2204BE660062DAF0 /* main.m */; };
-		5F0149702204BECB0062DAF0 /* nodle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F01496D2204BEA60062DAF0 /* nodle.framework */; };
-		5F0149712204BECB0062DAF0 /* nodle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F01496D2204BEA60062DAF0 /* nodle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5F01497B2204C5560062DAF0 /* NodeRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F01497A2204C5560062DAF0 /* NodeRegistry.m */; };
 		5F0149B1222520A90062DAF0 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149B0222520A90062DAF0 /* DraggableView.m */; };
 		5F0149B8223033B40062DAF0 /* NodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0149B7223033B40062DAF0 /* NodeView.m */; };
@@ -26,33 +24,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5F01496C2204BEA60062DAF0 /* PBXContainerItemProxy */ = {
+		5FED72362304A4D1005B5AB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5F0149672204BEA50062DAF0 /* nodle.xcodeproj */;
+			containerPortal = 5F0149672204BEA50062DAF0 /* NodeGraph.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 405038E821FC814A005B1585;
-			remoteInfo = nodle;
+			remoteInfo = "NodeGraph-ios";
 		};
-		5F01496E2204BEA60062DAF0 /* PBXContainerItemProxy */ = {
+		5FED72382304A4D1005B5AB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5F0149672204BEA50062DAF0 /* nodle.xcodeproj */;
+			containerPortal = 5F0149672204BEA50062DAF0 /* NodeGraph.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 405038F121FC814A005B1585;
-			remoteInfo = nodleTests;
+			remoteInfo = NodeGraphTests;
 		};
-		5F0149722204BECB0062DAF0 /* PBXContainerItemProxy */ = {
+		5FED723A2304A4D1005B5AB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5F0149672204BEA50062DAF0 /* nodle.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 405038E721FC814A005B1585;
-			remoteInfo = nodle;
-		};
-		5F0149B4222520AA0062DAF0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F0149672204BEA50062DAF0 /* nodle.xcodeproj */;
+			containerPortal = 5F0149672204BEA50062DAF0 /* NodeGraph.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 40C08F612210C34500FD01AE;
-			remoteInfo = "nodle-macos";
+			remoteInfo = "NodeGraph-macos";
+		};
+		5FED723C2304A4EF005B5AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F0149672204BEA50062DAF0 /* NodeGraph.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 405038E721FC814A005B1585;
+			remoteInfo = "NodeGraph-ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -63,7 +61,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5F0149712204BECB0062DAF0 /* nodle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,7 +78,7 @@
 		5F01495C2204BE660062DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F01495E2204BE660062DAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F01495F2204BE660062DAF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5F0149672204BEA50062DAF0 /* nodle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = nodle.xcodeproj; path = "submodules/nodle-objc/nodle.xcodeproj"; sourceTree = "<group>"; };
+		5F0149672204BEA50062DAF0 /* NodeGraph.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NodeGraph.xcodeproj; path = "submodules/nodle-objc/NodeGraph.xcodeproj"; sourceTree = "<group>"; };
 		5F0149792204C5560062DAF0 /* NodeRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeRegistry.h; sourceTree = "<group>"; };
 		5F01497A2204C5560062DAF0 /* NodeRegistry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeRegistry.m; sourceTree = "<group>"; };
 		5F0149AF222520A90062DAF0 /* DraggableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
@@ -105,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F0149702204BECB0062DAF0 /* nodle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,19 +145,9 @@
 		5F0149662204BE980062DAF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F0149672204BEA50062DAF0 /* nodle.xcodeproj */,
+				5F0149672204BEA50062DAF0 /* NodeGraph.xcodeproj */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5F0149682204BEA50062DAF0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5F01496D2204BEA60062DAF0 /* nodle.framework */,
-				5F01496F2204BEA60062DAF0 /* nodleTests.xctest */,
-				5F0149B5222520AA0062DAF0 /* nodle.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5F0149752204BF990062DAF0 /* NodleViews */ = {
@@ -187,6 +173,16 @@
 			path = NodleViews;
 			sourceTree = "<group>";
 		};
+		5FED72312304A4D0005B5AB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FED72372304A4D1005B5AB6 /* NodeGraph.framework */,
+				5FED72392304A4D1005B5AB6 /* NodeGraphTests.xctest */,
+				5FED723B2304A4D1005B5AB6 /* NodeGraph.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,7 +198,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5F0149732204BECB0062DAF0 /* PBXTargetDependency */,
+				5FED723D2304A4EF005B5AB6 /* PBXTargetDependency */,
 			);
 			name = NodleUI;
 			productName = NodleUI;
@@ -236,8 +232,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 5F0149682204BEA50062DAF0 /* Products */;
-					ProjectRef = 5F0149672204BEA50062DAF0 /* nodle.xcodeproj */;
+					ProductGroup = 5FED72312304A4D0005B5AB6 /* Products */;
+					ProjectRef = 5F0149672204BEA50062DAF0 /* NodeGraph.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -248,25 +244,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		5F01496D2204BEA60062DAF0 /* nodle.framework */ = {
+		5FED72372304A4D1005B5AB6 /* NodeGraph.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = nodle.framework;
-			remoteRef = 5F01496C2204BEA60062DAF0 /* PBXContainerItemProxy */;
+			path = NodeGraph.framework;
+			remoteRef = 5FED72362304A4D1005B5AB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5F01496F2204BEA60062DAF0 /* nodleTests.xctest */ = {
+		5FED72392304A4D1005B5AB6 /* NodeGraphTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = nodleTests.xctest;
-			remoteRef = 5F01496E2204BEA60062DAF0 /* PBXContainerItemProxy */;
+			path = NodeGraphTests.xctest;
+			remoteRef = 5FED72382304A4D1005B5AB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5F0149B5222520AA0062DAF0 /* nodle.framework */ = {
+		5FED723B2304A4D1005B5AB6 /* NodeGraph.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = nodle.framework;
-			remoteRef = 5F0149B4222520AA0062DAF0 /* PBXContainerItemProxy */;
+			path = NodeGraph.framework;
+			remoteRef = 5FED723A2304A4D1005B5AB6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -306,10 +302,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5F0149732204BECB0062DAF0 /* PBXTargetDependency */ = {
+		5FED723D2304A4EF005B5AB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = nodle;
-			targetProxy = 5F0149722204BECB0062DAF0 /* PBXContainerItemProxy */;
+			name = "NodeGraph-ios";
+			targetProxy = 5FED723C2304A4EF005B5AB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
