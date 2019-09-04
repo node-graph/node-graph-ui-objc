@@ -1,5 +1,5 @@
 #import "NodeConnectionView.h"
-#import <nodle/NodeOutput.h>
+#import <NodeGraph/NodeOutput.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

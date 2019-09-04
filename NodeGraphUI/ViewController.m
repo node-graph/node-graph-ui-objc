@@ -20,7 +20,7 @@
     [[self.nodeGraphView.topAnchor constraintEqualToAnchor:self.view.topAnchor] setActive:YES];
     [[self.nodeGraphView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor] setActive:YES];
     
-    NSUInteger count = 6;
+    NSUInteger count = 2;
     NSMutableArray<id<Node>> *nodes = [NSMutableArray array];
     for (NSUInteger i = 0; i < count; i++) {
         RGBNode *rgbNode = [RGBNode new];

@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import <nodle/Node.h>
+#import <NodeGraph/NodeGraph.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

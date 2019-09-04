@@ -137,8 +137,6 @@ static const CGFloat connectionSnapDistance = 30;
 }
 
 - (void)nodeConnectionView:(NodeConnectionView *)nodeConnectionView didStartPanAtOffset:(CGPoint)offset {
-    CGPoint point = [nodeConnectionView.gestureView convertPoint:CGPointZero toView:self];
-    
     // Create handle view
     UIView *handleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     handleView.backgroundColor = UIColor.blueColor;
@@ -159,7 +157,6 @@ static const CGFloat connectionSnapDistance = 30;
 }
 
 - (void)nodeConnectionView:(NodeConnectionView *)nodeConnectionView didPanToOffset:(CGPoint)offset withTranslation:(CGPoint)translation {
-    CGPoint point = [nodeConnectionView.gestureView convertPoint:offset toView:self];
     // Move handle view
     DraggningConnectionModel *draggingConnection = [self.draggingConnections objectForKey:nodeConnectionView];
     draggingConnection.handleView.center = offset;
